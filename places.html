@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel='stylesheet' href='css/bootstrap.min.css/' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src='js/jquery-1.11.3.js'></script>
+    <script src='js/scripts.js'></script>
+    <title>Places I've Been </title>
+  </head>
+  <body>
+    <div class='container'>
+      <div class='jumbotron'>
+        <h1>Destinations</h1>
+      </div>
+
+      <div class='row'>
+        <div class='col-md-5'>
+          <h2>Add A Place:</h2>
+
+          <form id='new-place'>
+            <div class="form-group">
+              <label for='location-name'>Destination Name:</label>
+              <input type='text' class='form-control location-name' id='location-name'>
+            </div>
+              <div class="form-group">
+                <label for="date-visited">Date Visited:  </label>
+                <input type="date" class="form-control date-visted" id="date-visited">
+              </div>
+
+              <div id="landmarks">
+                <div class="landmarks">
+                  <div class="form-group">
+                    <label for="landmark">Landmark Visited:  </label>
+                    <input type="text" class="form-control" id="landmark">
+                  </div>
+                  <div class="form-group">
+                    <label for="notes">Notes:  </label>
+                    <input type="text" class="form-control notes" id="notes">
+                  </div>
+                </div>
+              </div>
+
+              <!-- <span class="btn btn-primary" id="add-location">Another address</span> -->
+
+              <button type="submit" class="btn">Add</button>
+            </form>
+
+            <h2>Places:</h2>
+            <ul id="places">
+
+            </ul>
+
+            <div class="location col-md-5">
+              <div id="show-location">
+                <h2></h2>
+                <p>Location Name:  <span class="location-name"></span></p>
+                <p>Date Visted:  <span class='date-visted'></span></p>
+                <p>Landmark:  <span class='landmark'></span></p>
+                <p>Notes:  <span class="notes"></span></p>
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    </html>
